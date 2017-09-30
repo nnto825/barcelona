@@ -1,0 +1,36 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-image:url(../img/background.jpg); 
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+}
+h1{
+	text-align: center;
+	color: white;
+	margin-top: 200px;
+}
+.login_box{
+	height: 600px;
+	width: 1000px;
+	margin: 10px auto;
+	background-image: url(../img/photo/logo-1.jpg);
+	padding: 0.1px;
+	color: white;
+}
+.login_box_1{
+	height: 400px;
+	width: 440px;
+	border: 1px solid silver;
+	margin: 30px auto;
+}
+input{
+	height: 30px;
+	width: 360px;
+	border-radius: 6px;
+	border: none;
+	border: 1px solid silver;
+	margin: 8px 20px;
+}

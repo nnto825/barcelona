@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>FCBarcelona</title>
+		<link rel="shortcut icon" href="../img/fcbLogo.png" />
+		<link rel="stylesheet" href="../css/login.css" />
+		<!--<script type="text/javascript" src="../js/code.js" ></script>-->
+	</head>
+	<body>
+		<h1>新客户注册</h1>
+		<div class="login_box">
+			<div class="login_box_1">
+				<span style="margin-left: 20px;">用户</span><br />
+					<input type="text" /><br />
+				<span style="margin-left: 20px;">密码</span><br />
+					<input type="password" /><br />
+				<span style="margin-left: 20px;">确认密码</span><br />
+					<input type="password" /><br />
+				<span style="margin-left: 20px;">验证码</span><br />
+					<input type="text" style="width: 180px;"/>
+					<input type="text" style="width: 100px;margin-left: 50px;text-align: center;font-size: 16px;" id="code" readonly="readonly" value=""/><br />
+				<input type="submit" value="注册" style="background-color: deepskyblue;cursor: pointer;margin-top: 40px;height: 40px;font-size: 20px;" onclick="window.location.href='enter.html'"/>
+			</div>
+		</div>
+		
+		<script>
+			var code = document.getElementById('code');
+			var str = "";
+			for(var i = 65;i < 91;i++){
+				str += String.fromCharCode(i);
+			}
+			for(var i = 97;i < 123;i++){
+				str += String.fromCharCode(i);
+			}
+			for(var i = 0;i <= 9;i++){
+				str += i;
+			}
+			
+			var arr = "";
+			for(var i = 0;i < 4;i++){
+				n = Math.trunc(Math.random()*62);
+				arr += str[n]
+			}
+			console.log(arr)
+			code.value = arr
+		</script>
+		
+	</body>
+	
+	
+	
+</html>
